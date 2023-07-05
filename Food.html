@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: green;
+        }
+        .logo{
+            margin-top: 10px;
+            margin-left: 60px;
+        }
+        .icons{
+            height: 10vh;
+            width: 20vw;
+            /* background-color: red; */
+            display: flex;
+            float: right;
+            margin-top: 30px;
+       
+        }
+        .icons i{
+            font-size: 40px;
+            color: black;
+            margin: 20px;
+        }
+        .icons i:hover{
+            background-color: blue;
+        }
+        nav{
+            width: 80%;
+            background-color: blue;
+            overflow: auto;
+            margin: 20px;
+        }
+        ul{
+            padding: 0;
+            margin: 0 20px;
+            list-style: none;
+        }
+        li{
+            float: left;
+            margin: 20px;
+        }
+        nav a{
+            width: 100px;
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            text-align: center;
+        }
+        nav a:hover{
+            background-color: red;
+        }
+        .main{
+            width: 80%;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 80%;
+            transform: translate(-50% , -50%);
+            transition: all 50s;
+            overflow: hidden;
+            margin: 120px;
+            margin-top: 100px;
+            margin-left: 10px;
+            float: left;
+        }
+        .slider{
+            width: 4800px;
+            position: absolute;
+            animation: demo 20s infinite;
+        }
+        .slider img{
+            height: 600px;
+            width: 1200px;
+            float: left;
+        }
+        @keyframes demo{
+            0%{left: 0px;}
+            25%{left: -1200px;}
+            50%{left: -2400px;}
+            75%{left: -3600px;}
+            100%{left: -3600px;}
+        }
+        .wrapper{
+            height: 40vh;
+            width: 60%;
+            display: flex;
+            float: left;
+            margin-top: 600px;
+            margin-left: 150px;
+        }
+        h1{
+            font-size: 60px;
+            display: flex;
+            list-style: none;
+            margin-top: -10px;
+        }
+        p{
+            font-size: 30px;
+            display: flex;
+            margin-top: -10px;
+            margin-left: 60px;
+        }
+        .w2{
+            height: 60vh;
+            width: 60%;
+            display: flex;
+            float: left;
+            margin: 60px;
+        } 
+        h2{
+            font-size: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 120px;
+            margin-top: -180px;
+        }
+        b{
+            font-size: 30px;
+        }
+        .menu{
+            height: 55vh;
+            width: 80%;
+            /* background-color: red; */
+            display: flex;
+            float: left;
+            margin: 60px;
+        }
+        .menu img{
+            margin: 20px;
+            cursor: pointer;
+        }
+        .menu img:hover{
+            transform: scale(1.08);
+            transition: all 2s;
+        }
+        .m1{
+            height: 55vh;
+            width: 80%;
+            /* background-color: aqua; */
+            display: flex;
+            float: left;
+            margin: 60px;
+        }
+        .m1 img{
+            margin: 20px;
+            cursor: pointer;
+        }
+        .m1 img:hover{
+            transform: scale(1.08);
+            transition: all 2s;
+        }
+        .m2{
+            height: 70vh;
+            width: 80%;
+            /* background-color: rgb(255, 0, 191); */
+            display: flex;
+            float: left;
+            margin: 60px;
+        }
+        .m2 img{
+            margin: 10px;
+            cursor: pointer;
+        }
+        .m2 img:hover{
+            transform: scale(1.08);
+            transition: all 2s;
+        }
+        .m3{
+            height: 70vh;
+            width: 100%;
+            /* background-color: rgb(255, 217, 0); */
+            display: flex;
+            float: left;
+            margin: 60px;
+        }
+        .m3 img{
+            margin: 5px;
+            cursor: pointer;
+        }
+        .m3 img:hover{
+            transform: scale(1.08);
+            transition: all 2s;
+        }
+        .m4{
+            height: 70vh;
+            width: 100%;
+            /* background-color: rgb(89, 0, 255); */
+            display: flex;
+            float: left;
+            margin: 60px;
+        }
+        .m4 img{
+            margin: 20px;
+            cursor: pointer;
+        }
+        .m4 img:hover{
+            transform: scale(1.08);
+            transition: all 2s;
+        }
+        .m5{
+            height: 50vh;
+            width: 80%;
+            /* background-color: grey; */
+            display: flex;
+            float: left;
+            margin: 60px;
+        }
+        .m5 img{
+            margin: 20px;
+            cursor: pointer;
+        }
+        .m5 img:hover{
+            transform: scale(1.08);
+            transition: all 2s;
+        }
+        .m6{
+            height: 70vh;
+            width: 100%;
+            /* background-color: rgb(0, 183, 255); */
+            display: flex;
+            float: left;
+            margin: 60px;
+        }
+        .m6 img{
+            margin: 20px;
+            cursor: pointer;
+        }
+        .m6 img:hover{
+            transform: scale(1.08);
+            transition: all 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="D:\pic\images.png" alt="">
+    </a>
+        <div class="icons">
+          <a href="https://www.instagram.com/americanalv/"><i class="fa-brands fa-instagram"></i></a> 
+          <a href="https://www.yelp.com/biz/americana-las-vegas-2"><i class="fa-brands fa-yelp"></i></a>
+        </div>
+    </div>
+        <nav>
+            <ul>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">DRINKS</a></li>
+                <li><a href="#">CATERING</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">PARTIES</a></li>
+                <li><a href="#">RESERVE</a></li>
+                <li><a href="#">JOBS</a></li>
+            </ul>
+        </nav>
+        <div class="main">
+          <div class="slider">
+            <img src="D:\pic\R1.jfif" alt="">
+            <img src="D:\pic\R2.jfif" alt="">
+            <img src="D:\pic\r3.jfif" alt="">
+            <img src="D:\pic\r4.jfif" alt="">
+          </div>
+        </div>
+        <div class="wrapper">
+            <h1>ABOUT US</h1>
+            <p>Americana brings incredible blends of various cultures to the Desert Shores community in Las Vegas. The restaurant offers fine dining with a blended cultural theme of modern American cuisine.</p>
+            <!-- <button type="button" class="btn btn-primary" btn-sm style="height: 100px; width: 600px; margin-top: -2px; margin-left: 20px;">READ MORE</button> -->
+        </div>
+        <div class="w2">
+            <h2>CATHERING</h2>
+            <!-- <button type="button" class="btn btn-danger" btn-sm style="height: 100px; width: 500px; margin-top: 250px;">CATHERING</button> -->
+            <b>We Cater your Needs. Elegant style of catering for your style and budget. Any kind of event from weddings to birthdays.</b>
+        </div>
+        <div class="menu">
+            <img src="D:\pic\Pizza.jfif" alt="">
+            <img src="D:\pic\P1.jfif" alt="">
+        </div>
+        <div class="m1">
+            <img src="D:\pic\burger.jfif" alt="">
+            <img src="D:\pic\b1.jfif" alt="">
+        </div>
+        <div class="m2">
+            <img src="D:\pic\sandwich1.jfif" alt="">
+            <img src="D:\pic\s1.jfif" alt="">
+        </div>
+        <div class="m3">
+            <img src="D:\pic\bowls.jfif" alt="">
+            <img src="D:\pic\bowls1.jfif" alt="">
+            <img src="D:\pic\bowls2.jfif" alt="">
+        </div>
+        <div class="m4">
+            <img src="D:\pic\rolls.jfif" alt="">
+            <img src="D:\pic\rolls1.jfif" alt="">
+        </div>
+        <div class="m5">
+            <img src="D:\pic\dessert.jfif" alt="">
+            <img src="D:\pic\d1.jfif" alt="">
+        </div>
+        <div class="m6">
+            <img src="D:\pic\appetizer.jfif" alt="">
+            <img src="D:\pic\a1.jfif" alt="">
+        </div>
+</body>
+</html>
